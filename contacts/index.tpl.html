@@ -1,0 +1,24 @@
+@@include('_head.html', {
+	"rootclass": "faq",
+	"title": "Dažnai užduodami klausimai",
+	"includes": ""
+})
+<body>
+
+@@include('_header.html')
+<h2>D.U.K.</h2>
+
+<div mv-app="faq" mv-storage="https://github.com/mavoweb/mavo.io/faq/questions.json" mv-plugins="markdown">
+	<section id="[id]" mv-multiple property="questions">
+		<h1 class="h1"><a href="#[id]" property="question" mv-attribute="none">Klausimai</a></h1>
+
+		<div property="answer" class="markdown"></div>
+
+		<meta property="id" mv-default="[idify(question)]">
+	</section>
+</div>
+
+@@include('_footer.html')
+
+</body>
+</html>

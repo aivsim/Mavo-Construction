@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="@@rootclass">
+<head>
+	<meta charset="UTF-8">
+	<title>Darbų galerija</title>
+	<link rel="stylesheet" href="https://get.mavo.io/mavo.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="icon" href="../favicon.ico">
+
+	@@includes
+
+	<script src="https://get.mavo.io/mavo.es5.js"></script>
+</head>
+
+<body>
+
+<header>
+	<h1 class="logo">
+		<a href="/"><img src="../logo.svg" alt="Mavo"></a>
+	</h1>
+	<nav>
+	<!--<a href="../portfolio">Darbų galerija</a>
+	<a href="../demos">Paslaugos</a>		
+	<a href="../contacts">Kontaktai</a>-->
+	<a href="../faq">D.U.K.</a>
+</nav>
+
+</header>
+
+<h2>D.U.K.</h2>
+
+<div mv-app="portfolio" mv-storage="https://github.com/mavoweb/data/portfolio">
+	<header>
+		<h1><a href="http://julesmuck.com"><img src="http://julesmuck.com/wp-content/uploads/2016/04/mucklogoBLCK.png" alt="Jules Muck" class="logo" /></a></h1>
+	</header>
+
+	<div>
+		<a property="painting" typeof="Painting" mv-multiple mv-attribute="none">
+			<img property="image" />
+			<p property="name" mv-default="[readable(to(filename(image), '.'))]"></p>
+		</a>
+	</div>
+</div>
+
+<footer>
+	<article>
+		<h1>Atraskite</h1>
+		<ul>			
+			<!--<li><a href="../portfolio">Darbų galerija</a></li>
+			<li><a href="../demos">Paslaugos</a></li>			
+			<li><a href="../contacts">Kontaktai</a></li>-->
+			<li><a href="../faq">D.U.K.</a></li>
+		</ul>
+	</article>
+</footer>
+
+<script src="../sitewide.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+

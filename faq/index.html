@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="faq">
+<head>
+	<meta charset="UTF-8">
+	<title>Dažnai užduodami klausimai</title>
+	<link rel="stylesheet" href="https://get.mavo.io/mavo.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="icon" href="../favicon.ico">
+
+	
+
+	<script src="https://get.mavo.io/mavo.es5.js"></script>
+</head>
+
+<body>
+
+<header>
+	<h1 class="logo">
+		<a href="/"><img src="../logo.svg" alt="Mavo"></a>
+	</h1>
+	<nav>
+	<!--<a href="../portfolio">Darbų galerija</a>
+	<a href="../demos">Paslaugos</a>		
+	<a href="../contacts">Kontaktai</a>-->
+	<a href="../faq">D.U.K.</a>
+</nav>
+
+</header>
+
+<h2>D.U.K.</h2>
+
+<div mv-app="faq" mv-storage="https://github.com/aivsim/Mavo-Construction/data/faq/faq.json" mv-plugins="markdown">
+	<section id="[id]" mv-multiple property="questions">
+		<h1 class="h1"><a href="#[id]" property="question" mv-attribute="none">Klausimai</a></h1>
+
+		<div property="answer" class="markdown"></div>
+
+		<meta property="id" mv-default="[idify(question)]">
+	</section>
+</div>
+
+<footer>
+	<article>
+		<h1>Atraskite</h1>
+		<ul>			
+			<!--<li><a href="../portfolio">Darbų galerija</a></li>
+			<li><a href="../demos">Paslaugos</a></li>			
+			<li><a href="../contacts">Kontaktai</a></li>-->
+			<li><a href="../faq">D.U.K.</a></li>
+		</ul>
+	</article>
+</footer>
+
+<script src="../sitewide.js"></script>
+
+
+</body>
+</html>
